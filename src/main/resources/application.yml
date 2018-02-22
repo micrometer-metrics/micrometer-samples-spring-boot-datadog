@@ -1,0 +1,10 @@
+spring.application.name: boot2-demo
+
+management:
+  metrics:
+    export:
+      datadog:
+        api-key: apikey
+        application-key: appkey
+        host-tag: ${spring.application.name}.domain.tld
+        step: 10s
